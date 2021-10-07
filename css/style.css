@@ -1,5 +1,7 @@
 :root {
     --color-primary: #917758;
+    --color-secundary: #3c2915;
+    --color-primary-light: #f5eee6;
 }
 
 * {
@@ -13,8 +15,8 @@ body {
 }
 
 .container {
-    width: 1700px;
-    margin: auto;
+    width: 1170px;
+    margin: 0 auto;
 }
 
 /********  HOME  *********/
@@ -23,7 +25,7 @@ body {
     position: relative;
     background-image: url(../images/bg-home.jpg);
     height: 100vh;
-    background-size: cover;
+    background-attachment: fixed;
 }
 .home .header {
     padding: 30px 0;
@@ -68,7 +70,7 @@ body {
 
 .home .banner {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     height: 270px;
     width: 770px;
@@ -101,7 +103,6 @@ body {
 /********  ABOUT  *********/
 
 .about {
-    height: 100vh;
     background-color: var(--color-primary);
 }
 
@@ -110,9 +111,12 @@ body {
 }
 
 .about .timing {
+    position: relative;
+    top: -50px ;
     width: 33%;
-    background-image: url(../images/brush-big.jpg);
     padding: 20px;
+    background-image: url(../images/brush-big.jpg);
+    
 }
 
 .about .timing .overlay {
@@ -135,7 +139,7 @@ body {
 }
 
 .about .timing .text {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .about .timing .text:after {
@@ -143,7 +147,7 @@ body {
     display: block;
     color: white;
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .about .timing .text:last-of-type::after {
@@ -164,5 +168,72 @@ body {
 
 .about .experience {
     width: 66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 110px;
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.about .experience .text p {
+    margin-bottom: 30px;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+/********  SERVICE  *********/
+
+.services {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-primary-light);
+}
+
+.services h2 {
+    color: var(--color-secundary);
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.services .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.services .box {
+    border: 3px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
+}
+
+.services .box h4 {
+    color: var(--color-secundary);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.services .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
 }
 
