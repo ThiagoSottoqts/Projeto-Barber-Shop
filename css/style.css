@@ -211,6 +211,7 @@ body {
     color: var(--color-secundary);
     font-weight: 400;
     font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .services .boxes {
@@ -237,3 +238,179 @@ body {
     line-height: 25px;
 }
 
+/********  APPOINTMENT  *********/
+
+.appointment {
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    height: 100vh;
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+    
+}
+
+.appointment h2 {
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.appointment img {
+    margin: 0 auto;
+    display: block;
+}
+
+.appointment form {
+    margin-top: 80px;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2opx;
+}
+
+.appointment .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.appointment .input-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.appointment label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--color-primary-light);
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment textarea {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.appointment button {
+    background-color: var(--color-secundary);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/********  GALLERY  *********/
+
+.gallery {
+    padding: 100px 0;
+    background-color: var(--color-primary-light);
+}
+
+.gallery h2 {
+    color: var(--color-secundary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery img {
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery .gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 100vh;
+    margin: 50px auto;
+}
+
+.gallery .gallery-wrapper div {
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img {
+    width: 100%;
+}
+
+
+
+/********  LOCATION  *********/
+
+.location {
+    padding: 100px 0;
+    background: url(../images/bg-location.jpg);
+    background-size: cover;
+}
+
+.location .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+}
+
+.location .head .info{
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 100%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.location .head .info .text span {
+    display: block;
+    font-size: 13px;
+}
+
+.location .head .info .text span:first-child {
+    color: silver;
+}
+
+.location .head .info .text span:last-child {
+    color: white;
+}
+
+.location .map {
+    width: 100%;
+}
+.location .map iframe {
+    width: 100%;
+}
+
+/********  FOOTER  *********/
+
+.footer {
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
+}
